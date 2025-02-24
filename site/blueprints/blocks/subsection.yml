@@ -1,0 +1,26 @@
+# /site/blueprints/blocks/subsection.yml
+name: Subsection
+icon: list-bullet
+tabs:
+  content:
+    fields:
+      title:
+        label: Subsection Title
+        type: text
+      testCases:
+        label: Subsection Test Cases
+        type: structure
+        fields:
+          name:
+            label: Test Case Name
+            type: text
+            default: "Verify that "
+            help: "e.g - Verify that the menu can be closed"
+          jiraUrl:
+            label: Jira Ticket URL
+            type: url
+            help: Link the associated Jira ticket (if applicable)
+          notes:
+            label: Test Case Notes
+            type: text
+            help: Any extra notes that'd be useful? Link them here.
