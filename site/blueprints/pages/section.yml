@@ -1,5 +1,5 @@
 # Each page blueprint must have a title, the title may be different from the file name
-title: Project
+title: Project Section
 
 # Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 🖼
@@ -18,26 +18,22 @@ options:
 # More about different types of sections: https://getkirby.com/docs/reference/panel/sections
 # More about columns: https://getkirby.com/docs/guide/blueprints/layout#defining-columns
 
-sections:
-  projectsHeadline:
-    type: fields
+tabs:
+  content:
     fields:
-      projectsHeadline:
-        type: headline
-        label: Project Sections
-  projects:
-    label: Choose a section to edit, or create a new one.
-    type: pages
-    create: section
-    layout: cards
-    templates:
-      - section
+      blocks:
+        type: blocks
+        fieldsets:
+          - subsection
   settings:
-    type: fields
+    # The first column contains a set of fields to store
+    # information about the album.
+    #
+    # List of all available field types:
+    # https://getkirby.com/docs/reference/panel/fields
     fields:
-      settingsHeadline:
-        type: headline
-        label: Project Settings
+      # If you need the same field in multiple locations, you can define them once and reuse whereever needed.
+      # Here we use a files field defined in `/site/blueprints/field/cover.yml`
       projectCover: fields/cover
       projectDescription:
         type: writer

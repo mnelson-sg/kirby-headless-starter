@@ -1,26 +1,44 @@
 # /site/blueprints/blocks/subsection.yml
 name: Subsection
 icon: list-bullet
+preview: fields
+wysiwyg: true
 tabs:
   content:
     fields:
       title:
         label: Subsection Title
-        type: text
+        type: blocks
+        max: 1
+        empty: Click to add title to this subsection.
+        fieldsets:
+          - heading
       testCases:
         label: Subsection Test Cases
-        type: structure
+        type: multilist
         fields:
           name:
             label: Test Case Name
             type: text
             default: "Verify that "
-            help: "e.g - Verify that the menu can be closed"
+           #help: "e.g - Verify that the menu can be closed"
           jiraUrl:
             label: Jira Ticket URL
             type: url
-            help: Link the associated Jira ticket (if applicable)
+            #help: Link the associated Jira ticket (if applicable)
           notes:
             label: Test Case Notes
             type: text
-            help: Any extra notes that'd be useful? Link them here.
+            #help: Any extra notes that'd be useful? Link them here.
+          platforms:
+            label: Platforms to Test
+            type: checkboxes
+            options:
+              quest: Quest
+              steam: SteamVR
+              psvr: PSVR
+              pico: Pico
+      blocks:
+        type: blocks
+        fieldsets:
+          - button

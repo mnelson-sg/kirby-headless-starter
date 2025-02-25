@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f7fff67826d05cfeeddf34bc2afadd0",
+    "content-hash": "d2decb1005dba0c34f0e0ba0925e9ac4",
     "packages": [
         {
             "name": "bogdancondorachi/kirby-table-field",
@@ -1030,6 +1030,41 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.2"
             },
             "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "sylvainjule/kirby-multilist",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sylvainjule/kirby-multilist.git",
+                "reference": "20f8b8440353c9836d8666c2eefa86d1604b46d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sylvainjule/kirby-multilist/zipball/20f8b8440353c9836d8666c2eefa86d1604b46d7",
+                "reference": "20f8b8440353c9836d8666c2eefa86d1604b46d7",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvain Julé",
+                    "email": "contact@sylvain-jule.fr"
+                }
+            ],
+            "description": "Quickly manage lists with multiple fields in Kirby",
+            "support": {
+                "issues": "https://github.com/sylvainjule/kirby-multilist/issues",
+                "source": "https://github.com/sylvainjule/kirby-multilist/tree/1.0.1"
+            },
+            "time": "2021-12-07T18:52:19+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

@@ -1,0 +1,4 @@
+.k-choice-input {
+  display: flex;
+  flex-flow: column-reverse;
+}

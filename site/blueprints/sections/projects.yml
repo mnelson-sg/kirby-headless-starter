@@ -8,9 +8,9 @@ parent: kirby.page("projects")
 size: small
 info: "{{ page.images.count }} image(s)"
 layout: cards
-template: album
-empty: No albums yet
-image:
-  query: page.cover
-  cover: true
-  ratio: 5/4
+template: project
+empty: No projects yet
+#image:
+  #query: page.cover
+  #cover: true
+  #ratio: 5/4
