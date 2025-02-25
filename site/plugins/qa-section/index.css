@@ -1,0 +1,17 @@
+.k-choice-input {
+  display: flex;
+  flex-flow: column-reverse;
+}
+.k-grid[data-variant=choices] {
+  display: flex;
+}
+.k-structure-table-column {
+  padding-bottom: 25px;
+}
+.k-block-type-fields-form {
+  padding: 0;
+  background: #ffffff;
+}
+.k-page-view-status, .k-page-view-preview {
+  display: none;
+}
